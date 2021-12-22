@@ -1,0 +1,164 @@
+// estilos header
+    
+    header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        padding: 25px 100px;
+        background-color: $fondo-header;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }        
+
+    .logo-navegador{
+        height: 110px;
+        width: 110px;
+    }
+
+    .mi-navegador{
+        display: flex;
+        justify-content: flex-end;
+        
+            .mi-width{
+                width: max-content !important;
+            }
+
+    }
+
+    .desplegable{
+        position: absolute;
+        top: 50;
+        right: 0;
+        background-color: $color-fondo;
+    }
+
+    .mis-items{
+        padding: 5px 10px;
+    }
+
+    .mis-links{
+        text-decoration: none;
+        font-family: $font-textos;
+        font-weight: 300;
+        font-size: 13pt;
+        letter-spacing: 3pt;
+        color: $azul !important;
+        text-align: center;
+        padding: 5px 3px 3px 7px !important;
+        margin: 10px 0px;
+
+            &:hover{
+                background-color: $amarillo;
+            }
+
+    } 
+
+    .submenu{
+        text-decoration: none;
+        font-family: $font-textos;
+        font-weight: 300;
+        font-size: 11.5pt;
+        letter-spacing: 3pt;
+        color: $azul !important;
+        text-align: center;
+        padding: 5px !important;
+
+            &:hover{
+                background-color: $amarillo;
+            }
+        
+    } 
+
+    .submenu-todo{
+        text-decoration: none;
+        font-family: $font-textos;
+        font-weight: 300;
+        font-size: 11pt;
+        letter-spacing: 3pt;
+        color:$azul !important;
+        text-align: center;
+        padding: 5px !important;
+
+            &:hover{
+                background-color: $amarillo;
+            }
+
+    }
+
+
+// estilos nosotros
+    
+    #nosotros{
+        padding-top: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        font-family: $font-titulos;
+        font-weight: normal;
+        font-size: 50pt;
+        letter-spacing: 7pt;
+        color: $azul;
+        border-left: solid $amarillo 85px;
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+
+    h3{
+        font-family: $font-subtitulos;
+        font-weight: 400;
+        font-size: 22pt;
+        color: $azul;
+        margin-top: 20px;
+        margin-left: 100px;
+    
+            .subrayado{
+                text-decoration: underline;
+                text-underline-position: under;
+                text-decoration-color: $amarillo;
+                text-decoration-thickness: 5px;
+            }
+
+    }
+
+    .grilla-nosotros{
+        margin: 50px 100px 0px;
+        display: grid;
+        grid-template-areas:
+            "texto foto";
+        grid-template-columns: 40% auto;
+        column-gap: 100px;
+        align-items: center;
+
+            .texto-nosotros{
+                grid-area: texto;
+                font-family: $font-textos;
+                font-weight: 300;
+                font-size: 12pt;
+                letter-spacing: 1.5pt;
+                word-spacing: 2pt;
+                line-height: 18pt;
+                color: $azul;
+            }
+        
+            .foto-nosotros{
+                grid-area: foto;
+
+                    .foto-guia{
+                        width: 100%;
+                        transition: all 1s;
+                        
+                            &:hover{
+                                transform: scale(1.05);
+                            }
+                
+                    }
+                
+            }
+
+    }
